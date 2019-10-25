@@ -1,0 +1,61 @@
+####
+TARGET = gnu
+ifdef MAKECMDGOALS
+	TARGET = $(MAKECMDGOALS)
+else
+	TARGET = gnu
+endif
+#
+ifeq ($(TARGET),intel)
+	TYPE = intel
+	COMPILE_TYPE = intel
+endif
+ifeq ($(TARGET),mp)
+	TYPE = mp
+	CPPFLAGS = -openmp $(CPPFLAGS2)
+	COMPILE_TYPE = intel
+endif
+ifeq ($(TARGET),pg)
+	TYPE = pg
+	CPPFLAGS = -pg $(CPPFLAGS2)
+	COMPILE_TYPE = intel
+endif
+ifeq ($(TARGET),gdb)
+	TYPE = gdb
+	COMPILE_TYPE = gnu
+	OPTFLAGS = -g -DGDB -Wall
+endif
+ifeq ($(TARGET),gnu)
+	TYPE = gnu
+	COMPILE_TYPE = gnu
+	OPTFLAGS = -O2
+endif
+##
+ifeq ($(COMPILE_TYPE),intel)
+	CC = icpc
+	CPP = icpc
+	F90 = ifort
+	F77 = ifort
+	OPTFLAGS = -O2
+endif
+####
+ifeq ($(COMPILE_TYPE),gnu)
+	CC = gcc
+	CPP = g++
+	F77 = g77
+	F90 = gfortran
+endif
+####
+OBJ_1 = $(patsubst %.cc, .$(TYPE).%.o, $(SRC))
+OBJ_2 = $(patsubst %.c, .$(TYPE).%.o, $(OBJ_1))
+OBJ_3 = $(patsubst %.f, .$(TYPE).%.o, $(OBJ_2))
+OBJ = $(patsubst %.f90, .$(TYPE).%.o, $(OBJ_3))
+#
+.$(TYPE).%.o: %.c
+	$(CC) $(CFLAGS) $(OPTFLAGS) -c $< -o $@
+.$(TYPE).%.o: %.cc
+	$(CPP) $(CPPFLAGS) $(OPTFLAGS) -c $< -o $@
+.$(TYPE).%.o: %.f
+	$(F90) $(FFLAGS) $(OPTFLAGS) -c $< -o $@
+.$(TYPE).%.o: %.f90
+	$(F90) $(F90FLAGS) $(OPTFLAGS) -c $< -o $@

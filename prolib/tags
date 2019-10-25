@@ -1,0 +1,141 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ATOMSEQ_CMP	protein3.cc	/^inline int ATOMSEQ_CMP(int ir1, int ia1, int ir2, int ia2){$/;"	f
+Atom	protein.cc	/^Atom::Atom(int is, int it, string an){$/;"	f	class:Atom
+DEBUG	protein.cc	/^int DEBUG = 0;$/;"	v
+Molecule	main.cc	/^	Molecule():Protein(){};$/;"	f	class:Molecule
+Molecule	main.cc	/^	Molecule(const string str):Protein(str){};$/;"	f	class:Molecule
+Molecule	main.cc	/^class Molecule:public Protein{$/;"	c	file:
+PBB_dat	pbb_std.cc	/^namespace PBB_dat{$/;"	n	file:
+Protein	protein.cc	/^Protein::Protein(const string fn){$/;"	f	class:Protein
+Protein2	protein2.cc	/^Protein2::Protein2(const string fn){$/;"	f	class:Protein2
+Protein3	protein3.cc	/^Protein3::Protein3(const string fn, bool bh){$/;"	f	class:Protein3
+Restpl	restpl.cc	/^Restpl::Restpl(string fn){$/;"	f	class:Restpl
+addAtom	protein.cc	/^void Protein::addAtom(string line){$/;"	f	class:Protein
+addCB_GLY	protein.cc	/^void Protein::addCB_GLY(int ir){$/;"	f	class:Protein
+addRes	protein.cc	/^bool Protein::addRes(int rid){$/;"	f	class:Protein
+addRes	protein.cc	/^bool Protein::addRes(string rn0){$/;"	f	class:Protein
+addRes	protein3.cc	/^bool Protein3::addRes(const string rn0){$/;"	f	class:Protein3
+addRes_het	protein3.cc	/^bool Protein3::addRes_het(const string rn0){$/;"	f	class:Protein3
+addRotamer	rotamer.cc	/^void Rotamers::addRotamer(char *line){$/;"	f	class:Rotamers
+addRotamer	rotamer.cc	/^void Rotamers::addRotamer(double p, double *dim){$/;"	f	class:Rotamers
+addatom	restype.cc	/^void Restype::addatom(const string an){$/;"	f	class:Restype
+addneib	protein.cc	/^void Atom::addneib(int ia){$/;"	f	class:Atom
+addneib	protein3.cc	/^void Atom3::addneib(int ir, int ia){$/;"	f	class:Atom3
+addneib	restype.cc	/^void Restype::addneib(const string an1, const string an2){$/;"	f	class:Restype
+addneib_match	restype.cc	/^void Restype::addneib_match(const string an1, const string an2){$/;"	f	class:Restype
+angle	protein.cc	/^double Protein::angle(int ia, int ib, int ic){$/;"	f	class:Protein
+angle	xyzatm.cc	/^double angle(double *xa, double *xb, double *xc){$/;"	f
+atomDefine	restype.cc	/^int atomDefine(string rn, string an){$/;"	f
+atomtypes	restype.cc	/^vector<Atomtype*> atomtypes;$/;"	v
+binit_PBB	pbb_std.cc	/^	bool binit_PBB = false;$/;"	m	namespace:PBB_dat	file:
+calAtomzcrd	protein.cc	/^void Protein::calAtomzcrd(int ia){$/;"	f	class:Protein
+calProt_nat	protein3.cc	/^double Residue::calProt_nat(){$/;"	f	class:Residue
+calResclash	protein.cc	/^double Protein::calResclash(int ir){$/;"	f	class:Protein
+calchi	protein3.cc	/^void Residue::calchi(){$/;"	f	class:Residue
+calidx_chi	protein3.cc	/^void Residue::calidx_chi(){$/;"	f	class:Residue
+calint_tpl	restpl.cc	/^void Restpl::calint_tpl(int *idx, int &chiral, double *ag){$/;"	f	class:Restpl
+calphipsi	protein.cc	/^void Protein::calphipsi(int ir, double *ag){$/;"	f	class:Protein
+calphipsi	protein3.cc	/^void Residue::calphipsi(){$/;"	f	class:Residue
+calrms1	quatfit2.cc	/^double calrms1(vector<Xvec> &xa, vector<Xvec> &xb){$/;"	f
+calzcrd	protein3.cc	/^void Atom3::calzcrd(){$/;"	f	class:Atom3
+calztor	protein3.cc	/^double Atom3::calztor(){$/;"	f	class:Atom3
+collect_atomtypes	restype.cc	/^void collect_atomtypes(){$/;"	f
+datadir	protein.cc	/^string datadir = "";$/;"	v
+define	restype.cc	/^int Restype::define(string an, int &pos){$/;"	f	class:Restype
+defineAtype	obsolete.cc	/^int defineAtype(string rn, string an){$/;"	f
+delete_neib1	protein3.cc	/^void Atom3::delete_neib1(int ir){	\/\/ delete neib within resi.$/;"	f	class:Atom3
+determine_Rotamers	protein3.cc	/^Rotamers &Residue::determine_Rotamers(){$/;"	f	class:Residue
+distance2	protein.cc	/^double Protein::distance2(int ia, int ib){$/;"	f	class:Protein
+distance2	xyzatm.cc	/^double distance2(double *xa, double *xb){$/;"	f
+eraseAtoms	protein.cc	/^void Protein::eraseAtoms(int idx, int na){$/;"	f	class:Protein
+findatom	protein.cc	/^int Protein::findatom(int ir, string an){$/;"	f	class:Protein
+findatom	protein3.cc	/^int Residue::findatom(string an, bool bprint=0){$/;"	f	class:Residue
+findatom_tpl	restpl.cc	/^int Restpl::findatom_tpl(string rn, string an){$/;"	f	class:Restpl
+fix_pdbanam	protein3.cc	/^inline string fix_pdbanam(const string rn, const string &an){$/;"	f
+getReschi	protein.cc	/^int Protein::getReschi(int ir, int *idx){$/;"	f	class:Protein
+getatom	protein3.cc	/^Atom3 &Atom3::getatom(int ir, int ia){$/;"	f	class:Atom3
+getchi	protein3.cc	/^void Residue::getchi(vector<double> &chi){$/;"	f	class:Residue
+getdatadir	restype.cc	/^string getdatadir(){$/;"	f
+getpbb_aa	pbb_std.cc	/^double getpbb_aa(int id, double phi, double psi){$/;"	f
+getpbb_aa	pbb_std.cc	/^double getpbb_aa(int id, int iphi, int ipsi){$/;"	f
+getphipsi_bin	pbb_std.cc	/^void getphipsi_bin(int id, int *iphipsi){$/;"	f
+init	protein3.cc	/^void Residue::init(int rid, int idx){$/;"	f	class:Residue
+init	protein3.cc	/^void Residue::init(string rn0, int idx){$/;"	f	class:Residue
+initAtom	protein.cc	/^bool Protein::initAtom(string line){$/;"	f	class:Protein
+initAtom_pdb	protein3.cc	/^bool Residue::initAtom_pdb(const string &line){$/;"	f	class:Residue
+initAtomint	protein.cc	/^void Protein::initAtomint(int i0){$/;"	f	class:Protein
+initAtomint	protein3.cc	/^void Protein3::initAtomint(){$/;"	f	class:Protein3
+initAtomint	protein3.cc	/^void Residue::initAtomint(int i0=0){$/;"	f	class:Residue
+initAtomzcrd0	protein.cc	/^void Protein::initAtomzcrd0(int i0){$/;"	f	class:Protein
+initAtomzcrd0	protein3.cc	/^void Protein3::initAtomzcrd0(){$/;"	f	class:Protein3
+initAtomzcrd0	protein3.cc	/^void Residue::initAtomzcrd0(){$/;"	f	class:Residue
+initPRtype	obsolete.cc	/^void initPRtype(int flag){$/;"	f
+initRestpl	restpl.cc	/^void initRestpl(string fn){$/;"	f
+initRestypes	restype.cc	/^void initRestypes(string fn){$/;"	f
+initRestypes_pro	restype.cc	/^void initRestypes_pro(){$/;"	f
+initRotamers	rotamer.cc	/^void initRotamers(){$/;"	f
+initRotamers_bin	rotamer.cc	/^bool initRotamers_bin(string fn){$/;"	f
+initint	protein3.cc	/^void Atom3::initint(int ir0, int aseq){$/;"	f	class:Atom3
+initneib	protein.cc	/^void Protein::initneib(){$/;"	f	class:Protein
+initneib	protein3.cc	/^void Protein3::initneib(){$/;"	f	class:Protein3
+initneib1_sc	protein.cc	/^void Protein::initneib1_sc(int ir){		\/\/ specially for mutation$/;"	f	class:Protein
+initneib_sc	protein3.cc	/^void Residue::initneib_sc(){$/;"	f	class:Residue
+initpbb_aa	pbb_std.cc	/^void initpbb_aa(){	\/\/ read the probability of amini acid on backbone torsion$/;"	f
+insertAtoms	protein.cc	/^void Protein::insertAtoms(int idx, int na){$/;"	f	class:Protein
+iscomplete	protein.cc	/^bool Protein::iscomplete(){$/;"	f	class:Protein
+isname	restype.cc	/^bool Atomtype::isname(const string an){$/;"	f	class:Atomtype
+jacobi	quatfit.cc	/^void jacobi(double a[][4], double *d, double v[][4]){$/;"	f
+main	main.cc	/^int main(int argc, char *argv[]){$/;"	f
+makexyz1	protein.cc	/^bool Protein::makexyz1(int ia){$/;"	f	class:Protein
+makexyz1	protein3.cc	/^bool Atom3::makexyz1(){$/;"	f	class:Atom3
+mutAA	protein.cc	/^void Protein::mutAA(int ir, int id){$/;"	f	class:Protein
+mutRotamer	protein.cc	/^int Protein::mutRotamer(int ir, int irot){$/;"	f	class:Protein
+mutRotamer	protein3.cc	/^int Residue::mutRotamer(int irot){$/;"	f	class:Residue
+mutRotamer	protein3.cc	/^int Residue::mutRotamer(int irot, double &prot){$/;"	f	class:Residue
+mutRotamer	protein3.cc	/^void Residue::mutRotamer(const vector<double> &chi0){$/;"	f	class:Residue
+mutation	protein3.cc	/^void Residue::mutation(int id){$/;"	f	class:Residue
+natype	restype.cc	/^int natype = 0;$/;"	v
+pbb0	pbb_std.cc	/^	double pbb0[20][36][36], pbb_sum[20][36*36];$/;"	m	namespace:PBB_dat	file:
+pbb_sum	pbb_std.cc	/^	double pbb0[20][36][36], pbb_sum[20][36*36];$/;"	m	namespace:PBB_dat	file:
+popResidues	protein.cc	/^void Protein::popResidues(int nr){$/;"	f	class:Protein
+prtint	protein3.cc	/^void Atom3::prtint(){$/;"	f	class:Atom3
+prtneib	protein3.cc	/^void Atom3::prtneib(int ir0){$/;"	f	class:Atom3
+q2mat	quatfit.cc	/^void q2mat (double *q, double u[][3]) {$/;"	f
+quatfit	quatfit.cc	/^void quatfit(int n, double *w, double x1[][3], double x2[][3], double u[][3]){$/;"	f
+quatfit	quatfit2.cc	/^void quatfit(int n, vector<double> &w, vector<Xvec> &x1, vector<Xvec> &x2, double u[][3]){$/;"	f
+rdpdb	protein.cc	/^void Protein::rdpdb(FILE *fp){$/;"	f	class:Protein
+rdpdb	protein2.cc	/^void Protein2::rdpdb(FILE *fp){$/;"	f	class:Protein2
+rdpdb	protein2.cc	/^void Protein2::rdpdb(string fn){$/;"	f	class:Protein2
+rdpdb	protein3.cc	/^void Protein3::rdpdb(FILE *fp){$/;"	f	class:Protein3
+rdpdb	protein3.cc	/^void Protein3::rdpdb(const string fn){$/;"	f	class:Protein3
+refill	protein.cc	/^bool Protein::refill(){$/;"	f	class:Protein
+resDefine	restype.cc	/^int resDefine(string rn){$/;"	f
+resMutation	protein.cc	/^void Protein::resMutation(int ir, string rn){$/;"	f	class:Protein
+resMutation	protein3.cc	/^void Protein3::resMutation(int ir, string rn){$/;"	f	class:Protein3
+reset	protein.cc	/^void Protein::reset(){$/;"	f	class:Protein
+reset	protein3.cc	/^void Protein3::reset(){$/;"	f	class:Protein3
+restpl	restpl.cc	/^Restpl *restpl = NULL;$/;"	v
+restypes	restype.cc	/^vector <Restype> restypes;$/;"	v
+rotamers_aa	rotamer.cc	/^Rotamers rotamers_aa[20][36][36];$/;"	v
+rotmol	quatfit.cc	/^void rotmol(int na, double u[][3], double x[][3], double xn[][3]){$/;"	f
+rotmol	quatfit2.cc	/^void rotmol(int na, double u[][3], vector<Xvec> &x0, vector<Xvec> &xn){$/;"	f
+test	main.cc	/^void Molecule::test(){$/;"	f	class:Molecule
+torsion	protein.cc	/^double Protein::torsion(int ia, int ib, int ic, int id){$/;"	f	class:Protein
+torsion	xyzatm.cc	/^double torsion(double *xa, double *xb, double *xc, double *xd){$/;"	f
+translate1	quatfit.cc	/^void translate1(int na, double *w, double x[][3], double xn[][3], double *xc){$/;"	f
+translate1	quatfit2.cc	/^void translate1(int na, vector<Xvec> &x0, vector<Xvec> &xn, double *xc){$/;"	f
+translate2	quatfit2.cc	/^void translate2(int na, vector<double> wfit, vector<Xvec> &x0, vector<Xvec> &xn, double *xc){$/;"	f
+wrpdb	protein.cc	/^void Protein::wrpdb(FILE *fp){$/;"	f	class:Protein
+wrpdb	protein.cc	/^void Protein::wrpdb(string fn){$/;"	f	class:Protein
+wrpdb	protein2.cc	/^void Protein2::wrpdb(FILE *fp){$/;"	f	class:Protein2
+wrpdb	protein2.cc	/^void Protein2::wrpdb(string fn){$/;"	f	class:Protein2
+wrpdb	protein3.cc	/^void Protein3::wrpdb(FILE *fp){$/;"	f	class:Protein3
+wrpdb	protein3.cc	/^void Protein3::wrpdb(const string fn){$/;"	f	class:Protein3
+xdiff	protein.cc	/^void Protein::xdiff(int ia, int ib, double *xd){$/;"	f	class:Protein
+xdiff	xyzatm.cc	/^void xdiff(double *xa, double *xb, double *xba){$/;"	f
+xyzatm	xyzatm.cc	/^bool xyzatm(double *xi, double *xa, double *xb, double *xc, double *ag, int chiral){$/;"	f

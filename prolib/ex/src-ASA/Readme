@@ -1,0 +1,8 @@
+#compile the program
+using intel compiler "icpc calASA.cc -o calASA"
+or gnu compiler "g++ -O2 calASA.cc -o calASA"
+#
+# run the program
+./pdb2xrn.py 4qlm_A aminorna.mol2 > 1.pdbr
+./calASA 1.pdbr  > 4qlm_A.asa
+
