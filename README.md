@@ -42,3 +42,6 @@ $ ./dligand2.intel  -P ../966c/966c_protein.pdb -L ../966c/966c_ligand.mol2
 The argument of [-etype 1,2] gives two versions of potentials,represents the atom type in protein subdivided into 167 atom types and 13 atom types.
 
 Enjoy!
+
+# Citing
+Chen, P., Ke, Y., Lu, Y. et al. DLIGAND2: an improved knowledge-based energy function for protein–ligand interactions using the distance-scaled, finite, ideal-gas reference state. J Cheminform 11, 52 (2019) doi:10.1186/s13321-019-0373-4
